@@ -1,0 +1,9 @@
+# vue deployer
+public_dir: build
+
+deploy:
+  type: git
+  repo:
+    aigisss:
+      url: root@aigisss:/home/git/about
+      branch: master

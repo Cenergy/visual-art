@@ -637,12 +637,12 @@ export default class Hello extends Component {
                         </p>
                         <p>
                             爱即是诗是我的<span className='a'>个人网站</span>将平常的积累放到
-                            <span className='b'>博客</span>上, 以此来提高我的 
+                            <span className='b'>博客</span>上, 以此来提高我的
                             <span className='c'>编程</span> 水平.
                         </p>
                         <p>
                             我喜欢
-                            <span className='d'>旅行</span> 
+                            <span className='d'>旅行</span>
                             崇尚的是
                             <span className='e'>终生学习</span>.
                         </p>
@@ -677,8 +677,6 @@ export default class Hello extends Component {
                         </div>
                     </div>
                 </section>
-
-
 
                 <section id='vary' className='products'>
                     <div className='content'>
@@ -760,21 +758,19 @@ export default class Hello extends Component {
                                 
                             </div>
                         </div> */}
-                        <div id="mpwx" class="item">
-                          <h2>微信订阅</h2>
-                          <div class="item-content">
-                            <div>
-                              <img src="https://v7.res.dandyweng.com/images/qr-mpwx-dw.jpg"/>
-                              <p>最新动态与交流互动</p>
+                        <div id='mpwx' class='item'>
+                            <h2>微信订阅</h2>
+                            <div class='item-content'>
+                                <div>
+                                    <img src='https://v7.res.dandyweng.com/images/qr-mpwx-dw.jpg' />
+                                    <p>最新动态与交流互动</p>
+                                </div>
+                                <div>
+                                    <img src='https://v7.res.dandyweng.com/images/qr-mpwx-camarts.jpg' />
+                                    <p>摄影作品和旅行游记</p>
+                                </div>
                             </div>
-                            <div>
-                              <img src="https://v7.res.dandyweng.com/images/qr-mpwx-camarts.jpg"/>
-                              <p>摄影作品和旅行游记</p>
-                            </div>
-                          </div>
                         </div>
-
-                        
                     </div>
                 </section>
             </div>

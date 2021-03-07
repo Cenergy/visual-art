@@ -2,6 +2,10 @@
   "name": "visual-art",
   "version": "1.0.0",
   "private": true,
+  "homepage" : "/about/",
+  "hexo": {
+    "version": "4.2.1"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
@@ -18,9 +22,14 @@
     "topojson-client": "^3.1.0",
     "default-passive-events": "^2.0.0"
   },
+  "devDependencies": {
+    "hexo": "^4.2.1",
+    "hexo-deployer-git": "^2.1.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "hexo deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
