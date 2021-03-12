@@ -382,6 +382,17 @@ section .content p,
 	box-shadow: 0 6px 90px 0 #c04848, 0 8px 60px 0 #480048;
 	transform: scale(1.1);
 }
+#vary .button {
+	background-image: linear-gradient(to right, #486ec0 0%, #9d9bf5);
+	text-align: center !important;
+    padding: 0.5em 1em;
+    border-radius: 1.5em;
+	transition: .5s ease-in;
+}
+#vary .button:hover {
+	box-shadow: 0 6px 90px 0 #486ec0, 0 8px 60px 0 #9d9bf5;
+	transform: scale(1.1);
+}
 #camarts .button,
 #camarts-logo {
 	opacity: 0;

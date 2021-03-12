@@ -50,14 +50,14 @@ export default class Hello extends Component {
             </p>
 
             <div id="group">
-              <img alt="" id="photo-a" src="../../assets/images/8b6df735.jpg" />
-              <img alt="" id="photo-b" src="../../assets/images/f7e20fb5.jpg" />
-              <img alt="" id="photo-c" src="../../assets/images/dc4a72be.jpg" />
-              <img alt="" id="photo-d" src="../../assets/images/c76d0cd3.jpg" />
-              <img alt="" id="photo-e" src="../../assets/images/1739332d.jpg" />
-              <img alt="" id="photo-f" src="../../assets/images/99117f15.jpg" />
-              <img alt="" id="photo-g" src="../../assets/images/dd84e443.jpg" />
-              <img alt="" id="photo-h" src="../../assets/images/83b278df.jpg" />
+              <img alt="" id="photo-a" src="./assets/images/8b6df735.jpg" />
+              <img alt="" id="photo-b" src="./assets/images/f7e20fb5.jpg" />
+              <img alt="" id="photo-c" src="./assets/images/dc4a72be.jpg" />
+              <img alt="" id="photo-d" src="./assets/images/c76d0cd3.jpg" />
+              <img alt="" id="photo-e" src="./assets/images/1739332d.jpg" />
+              <img alt="" id="photo-f" src="./assets/images/99117f15.jpg" />
+              <img alt="" id="photo-g" src="./assets/images/dd84e443.jpg" />
+              <img alt="" id="photo-h" src="./assets/images/83b278df.jpg" />
             </div>
           </section> */}
 
@@ -632,7 +632,7 @@ export default class Hello extends Component {
                             <img
                                 alt=''
                                 id='camarts-logo'
-                                src='../../assets/images/camarts-logo.png'
+                                src='https://www.aigisss.com/favicon.ico'
                             />
                         </p>
                         <p>
@@ -651,10 +651,10 @@ export default class Hello extends Component {
                             <span className='f'>结合</span>到一起.
                         </p>
                         <a
-                            href='../camarts.app/index673a.html?bN'
+                            href='http://www.aigisss.com'
                             target='_blank'
                             className='button'>
-                            Take a Look
+                            去瞧瞧
                         </a>
                     </div>
                     <div className='showcase'>
@@ -662,17 +662,17 @@ export default class Hello extends Component {
                             <img
                                 alt=''
                                 id='camarts-showcase-c'
-                                src='../../assets/images/en/camarts-showcase-c.png'
+                                src='./assets/images/en/camarts-showcase-c.png'
                             />
                             <img
                                 alt=''
                                 id='camarts-showcase-b'
-                                src='../../assets/images/en/camarts-showcase2.png'
+                                src='./assets/images/en/camarts-showcase2.png'
                             />
                             <img
                                 alt=''
                                 id='camarts-showcase-a'
-                                src='../../assets/images/en/camarts-showcase.png'
+                                src='./assets/images/en/camarts-showcase.png'
                             />
                         </div>
                     </div>
@@ -680,37 +680,33 @@ export default class Hello extends Component {
 
                 <section id='vary' className='products'>
                     <div className='content'>
-                        <img alt='' id='vary-logo' src='../../assets/images/vary-logo.jpg' />
+                        <img alt='' id='vary-logo' src='https://www.aigisss.com/favicon.ico' />
                         <p>
-                            重量级创作工具，<br></br>
-                            轻量级社交网络。
+                            个人技术的博客，<br></br>
+                            响应式交互网站。
                         </p>
                         <a
-                            href='../itunes.apple.com/app/vary/id1190496148'
+                            href='http://www.aigisss.com'
                             target='_blank'
-                            rel='external'>
-                            <img
-                                alt=''
-                                src='../../assets/images/en/download-on-app-store.png'
-                                className='app-store-badge'
-                            />
+                            className='button'>
+                            去看看
                         </a>
                     </div>
                     <div className='showcase'>
                         <img
                             alt=''
                             id='vary-showcase-c'
-                            src='../../assets/images/en/vary-showcase-c.png'
+                            src='./assets/images/en/vary-showcase-c.png'
                         />
                         <img
                             alt=''
                             id='vary-showcase-b'
-                            src='../../assets/images/en/vary-showcase-b.png'
+                            src='./assets/images/en/vary-showcase-b.png'
                         />
                         <img
                             alt=''
                             id='vary-showcase-a'
-                            src='../../assets/images/en/vary-showcase-a.png'
+                            src='./assets/images/en/vary-showcase-a.png'
                         />
                     </div>
                 </section>
@@ -725,26 +721,20 @@ export default class Hello extends Component {
                         <div id='social-media' className='item'>
                             <h2>Social Media</h2>
                             <div className='item-content'>
+                         
                                 <a
                                     className='tag'
                                     target='_blank'
                                     rel='external'
-                                    href='../twitter.com/dandyweng'>
-                                    Twitter @dandyweng
+                                    href=''>
+                                    cenergy@foxmail.com
                                 </a>
                                 <a
                                     className='tag'
                                     target='_blank'
                                     rel='external'
-                                    href='../instagram.com/dandyweng'>
-                                    Instagram @dandyweng
-                                </a>
-                                <a
-                                    className='tag'
-                                    target='_blank'
-                                    rel='external'
-                                    href='../github.com/dandyweng.html'>
-                                    Github @dandyweng
+                                    href=''>
+                                    Github @cenergy
                                 </a>
                             </div>
                         </div>
@@ -758,16 +748,16 @@ export default class Hello extends Component {
                                 
                             </div>
                         </div> */}
-                        <div id='mpwx' class='item'>
+                        <div id='mpwx' className='item'>
                             <h2>微信订阅</h2>
-                            <div class='item-content'>
+                            <div className='item-content'>
                                 <div>
-                                    <img src='https://v7.res.dandyweng.com/images/qr-mpwx-dw.jpg' />
-                                    <p>最新动态与交流互动</p>
+                                    <img src='https://www.aigisss.com/assets/img/qrcode_for_weixin.fb004af6.jpg' />
+                                    <p>微信公众号</p>
                                 </div>
                                 <div>
-                                    <img src='https://v7.res.dandyweng.com/images/qr-mpwx-camarts.jpg' />
-                                    <p>摄影作品和旅行游记</p>
+                                    <img src='https://www.aigisss.com/assets/img/small_applets.7f87ab4e.jpg' />
+                                    <p>微信小程序</p>
                                 </div>
                             </div>
                         </div>

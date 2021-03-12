@@ -12,12 +12,12 @@ class Scene {
             this.intro(),
             this.autodidact(),
             this.globe(),
-            this.photo(),
+            // this.photo(),
             this.node(),
             this.design(),
             this.camarts(),
             this.camartsShowcase(),
-            this.markly(),
+            // this.markly(),
             this.vary(),
         ]);
     }

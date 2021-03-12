@@ -12,7 +12,7 @@ class Globe {
 		this.planet.loadPlugin(this.rotate(10))
 		this.planet.loadPlugin(
 			planetaryjs.plugins.earth({
-				topojson: { file: "../data/borderless-world.json" },
+				topojson: { file: "./data/borderless-world.json" },
 				oceans: { fill: "#dddee0" },
 				land: { fill: "#f7f7f7" }
 			})
@@ -78,7 +78,7 @@ class Globe {
 		}
 	}
 	locations() {
-		d3.json("../data/coordinates.json", (error, data) => {
+		d3.json("./data/coordinates.json", (error, data) => {
 			if (error) return console.error(error)
 
 			for (const c of data.coordinates) {
