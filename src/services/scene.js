@@ -9,9 +9,9 @@ class Scene {
     }
     init() {
         this.controller.addScene([
-            this.intro(),
-            this.autodidact(),
-            this.globe(),
+            // this.intro(),
+            // this.autodidact(),
+            // this.globe(),
             // this.photo(),
             this.node(),
             this.design(),

@@ -8,6 +8,7 @@ import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
 import * as planetaryjs from 'planetary.js';
 import Globe from '../../services/globe';
 import Scene from '../../services/scene';
+import ScrollAma from '../../services/scrollAma';
 
 export default class Hello extends Component {
     render() {
@@ -650,10 +651,7 @@ export default class Hello extends Component {
                             这个网站是将GIS与可视化
                             <span className='f'>结合</span>到一起.
                         </p>
-                        <a
-                            href='http://www.aigisss.com'
-                            target='_blank'
-                            className='button'>
+                        <a href='http://www.aigisss.com' target='_blank' className='button'>
                             去瞧瞧
                         </a>
                     </div>
@@ -685,10 +683,7 @@ export default class Hello extends Component {
                             个人技术的博客，<br></br>
                             响应式交互网站。
                         </p>
-                        <a
-                            href='http://www.aigisss.com'
-                            target='_blank'
-                            className='button'>
+                        <a href='http://www.aigisss.com' target='_blank' className='button'>
                             去看看
                         </a>
                     </div>
@@ -721,19 +716,10 @@ export default class Hello extends Component {
                         <div id='social-media' className='item'>
                             <h2>Social Media</h2>
                             <div className='item-content'>
-                         
-                                <a
-                                    className='tag'
-                                    target='_blank'
-                                    rel='external'
-                                    href=''>
+                                <a className='tag' target='_blank' rel='external' href=''>
                                     cenergy@foxmail.com
                                 </a>
-                                <a
-                                    className='tag'
-                                    target='_blank'
-                                    rel='external'
-                                    href=''>
+                                <a className='tag' target='_blank' rel='external' href=''>
                                     Github @cenergy
                                 </a>
                             </div>
@@ -776,5 +762,8 @@ export default class Hello extends Component {
         const scene = new Scene();
         window.scene = scene;
         scene.init();
+
+        const scrollAma = new ScrollAma();
+        scrollAma.init()
     }
 }
