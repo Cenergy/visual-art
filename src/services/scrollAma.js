@@ -9,6 +9,9 @@ class ScrollAma {
         this.intro();
         this.autodidact();
         this.globe();
+        this.node();
+        this.design();
+        this.camarts();
     }
 
     intro() {
@@ -132,6 +135,72 @@ class ScrollAma {
         //     },
         //     '-webkit-filter': 'blur(0)',
         // });
+    }
+    node() {
+        const tl1 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#nodes path',
+                scrub: true,
+                start: 'top center',
+            },
+        });
+        tl1.fromTo(
+            '#nodes path',
+            {
+                'stroke-dashoffset': 1200,
+            },
+            { 'stroke-dashoffset': 0, ease: Linear.easeIn }
+        );
+    }
+    design() {
+        gsap.to('#text-design', {
+            scrollTrigger: {
+                trigger: '#text-design',
+                scrub: true,
+                start: 'top center',
+            },
+            duration: 1,
+            yPercent: -30,
+            autoAlpha: 0,
+            ease: Linear.easeNone,
+        });
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#text-dot-connecting',
+                scrub: true,
+                start: 'top center',
+            },
+        });
+        tl.fromTo(
+            '#text-dot-connecting',
+            { yPercent: 30, autoAlpha: 0 },
+            { yPercent: 0, autoAlpha: 1, ease: Linear.easeNone, duration: 1 }
+        );
+    }
+    camarts() {
+        const tl1 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#camarts',
+                scrub: true,
+                end: 'top top',
+            },
+            duration: '100%',
+        });
+        const tl2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#camarts',
+                scrub: true,
+                end: 'top top',
+            },
+            duration: '100%',
+        });
+
+        tl1.fromTo('#text-camarts', { y: '-50vh' }, { y: 0, ease: Linear.easeNone, duration: 1 });
+        tl2.fromTo(
+            '#backdrop',
+            { height: 0 },
+            { height: '100vh', ease: Linear.easeNone, duration: 1 }
+        );
     }
 }
 
