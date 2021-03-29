@@ -18,7 +18,7 @@ class Scene {
             // this.camarts(),
             this.camartsShowcase(),
             // this.markly(),
-            this.vary(),
+            // this.vary(),
         ]);
     }
     intro() {

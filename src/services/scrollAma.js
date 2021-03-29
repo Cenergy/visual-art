@@ -12,6 +12,7 @@ class ScrollAma {
         this.node();
         this.design();
         this.camarts();
+        this.vary();
     }
 
     intro() {
@@ -188,19 +189,50 @@ class ScrollAma {
         });
         const tl2 = gsap.timeline({
             scrollTrigger: {
-                trigger: '#camarts',
+                trigger: '#camarts .container',
                 scrub: true,
-                end: 'top top',
+                start: 'top center',
+                end: 'bottom top',
             },
             duration: '100%',
+            onStart: () => {
+                const element = document.querySelector('#camarts');
+                element.classList.add('active');
+            },
+            onComplete: () => {
+                const element = document.querySelector('#camarts');
+                element.classList.remove('active');
+            },
         });
+        console.log('rdapp - ScrollAma - camarts - tl2', tl2);
 
         tl1.fromTo('#text-camarts', { y: '-50vh' }, { y: 0, ease: Linear.easeNone, duration: 1 });
-        tl2.fromTo(
+        tl1.fromTo(
             '#backdrop',
             { height: 0 },
             { height: '100vh', ease: Linear.easeNone, duration: 1 }
         );
+        // tl2.fromTo(
+        //     '#camarts .container',
+        //     { opacity: 0 },
+        //     { opacity: 1, ease: Linear.easeNone, duration: 1 }
+        // );
+    }
+    vary() {
+        const tl1 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#vary',
+                scrub: true,
+                start: 'top bottom',
+                end: 'top center',
+            },
+            duration: '100%',
+
+        });
+
+        tl1.from('#vary-showcase-a', { xPercent: 10, ease: Linear.easeNone, duration: 1 });
+        tl1.from('#vary-showcase-b', { xPercent: 30, ease: Linear.easeNone, duration: 1 });
+        tl1.from('#vary-showcase-c', { xPercent: 60, ease: Linear.easeNone, duration: 1 });
     }
 }
 
