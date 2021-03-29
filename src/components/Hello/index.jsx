@@ -759,9 +759,9 @@ export default class Hello extends Component {
         window.globe = globe;
         globe.init();
 
-        const scene = new Scene();
-        window.scene = scene;
-        scene.init();
+        // const scene = new Scene();
+        // window.scene = scene;
+        // scene.init();
 
         const scrollAma = new ScrollAma();
         scrollAma.init()

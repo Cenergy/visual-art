@@ -189,22 +189,14 @@ class ScrollAma {
         });
         const tl2 = gsap.timeline({
             scrollTrigger: {
-                trigger: '#camarts .container',
+                trigger: '#camarts',
                 scrub: true,
-                start: 'top center',
+                toggleClass: 'active',
+                start: 'top top',
                 end: 'bottom top',
             },
             duration: '100%',
-            onStart: () => {
-                const element = document.querySelector('#camarts');
-                element.classList.add('active');
-            },
-            onComplete: () => {
-                const element = document.querySelector('#camarts');
-                element.classList.remove('active');
-            },
         });
-        console.log('rdapp - ScrollAma - camarts - tl2', tl2);
 
         tl1.fromTo('#text-camarts', { y: '-50vh' }, { y: 0, ease: Linear.easeNone, duration: 1 });
         tl1.fromTo(
@@ -212,11 +204,17 @@ class ScrollAma {
             { height: 0 },
             { height: '100vh', ease: Linear.easeNone, duration: 1 }
         );
-        // tl2.fromTo(
-        //     '#camarts .container',
-        //     { opacity: 0 },
-        //     { opacity: 1, ease: Linear.easeNone, duration: 1 }
-        // );
+        tl1.fromTo('#camarts-logo', { display: 'none' }, { display: 'block' });
+        
+        tl2.fromTo(
+            '#camarts .container',
+            { opacity: 0.5 },
+            {
+                opacity: 1,
+                ease: Linear.easeNone,
+                duration: 1,
+            }
+        );
     }
     vary() {
         const tl1 = gsap.timeline({
@@ -227,7 +225,6 @@ class ScrollAma {
                 end: 'top center',
             },
             duration: '100%',
-
         });
 
         tl1.from('#vary-showcase-a', { xPercent: 10, ease: Linear.easeNone, duration: 1 });
